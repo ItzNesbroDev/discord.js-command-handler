@@ -4,17 +4,20 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\" --ignore-path .gitignore"
   },
   "dependencies": {
     "colors": "^1.4.0",
     "discord.js": "^13.6.0",
+    "dotenv": "^16.0.1",
     "glob": "^8.0.1",
     "mongoose": "^6.3.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "prettier": "2.6.2"
   },
   "repository": "git@github.com:ItzNesbroDev/discord.js-command-handler.git",
   "author": "ItzNesbroDev <asnesbeer3@gmail.com>"
